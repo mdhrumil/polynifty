@@ -16,10 +16,9 @@ contract PolyNFT is ERC721, Ownable {
 
 
     uint256 private _currentTokenIdentifier = 0;
-
     mapping(uint256 => string) private _tokenURIs;
 
-    constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) { }
+    constructor() ERC721("PolyNFT", "PNFT") { }
 
 
     /**
